@@ -9,7 +9,46 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- ### groupId,version直接继承自Parent,packaging默认为jar ### -->
+    <!-- <groupId>com.oschina</groupId> -->
     <artifactId>study-common</artifactId>
+    <!-- <version>1.0-SNAPSHOT</version> -->
+    <!-- <packaging>jar</packaging> -->
 
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+
+            <!-- 版本-version,已由Parent进行约定,可以省略 -->
+            <!-- <version>${junit.version}</version> -->
+
+            <!-- 包类型-type,默认为jar -->
+            <!-- <type>jar</type> -->
+
+            <!-- 依赖范围-scope,默认为compile -->
+            <!-- <scope>compile</scope> -->
+
+            <!-- 是否可选-optional,默认为false -->
+            <!-- <optional>false</optional> -->
+
+            <!-- 排除(传递的)依赖 -->
+            <!-- <exclusions></exclusions> -->
+
+        </dependency>
+
+        <!-- json处理器 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <!-- 包括了若干google的java项目广泛依赖的核心库 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

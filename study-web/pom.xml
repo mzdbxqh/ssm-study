@@ -10,15 +10,68 @@
     <packaging>war</packaging>
     <name>study-web Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>com.oschina</groupId>
+            <artifactId>study-blog-controller</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <!-- JSP相关 -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
         </dependency>
     </dependencies>
     <build>
         <finalName>study-web</finalName>
+        <!-- 这里定义build过程中将引入的资源文件 -->
+        <!-- 这里引入的键值对可以用于替换resources里边指定的资源文件中的${}占位符 -->
+        <filters>
+            <filter>${basedir}/src/main/resources/filters/${profile.active}.properties</filter>
+        </filters>
+
+        <!-- 这里定义build过程中将输出的资源文件,包括源地址/目标地址/需输出资源文件/不输出的资源文件,等 -->
+        <resources>
+            <resource>
+                <!-- 定义这部分资源文件的源目录(以下为默认值) -->
+                <directory>${basedir}/src/main/resources</directory>
+                <!-- 定义这部分资源文件输出到哪个目录(以下为默认值) -->
+                <targetPath>META-INF</targetPath>
+
+                <!-- 是否进行过滤,过滤的话,上面引入的filters/*.properties里面定义的键值对,会替换本部分资源文件内的占位符 -->
+                <!-- 例如上面filter.properties里边有一个my.password=123456 -->
+                <!-- 然后resources/jdbc.properties里边有一个jdbc.password=${my.password} -->
+                <!-- build之后,target/META-INF/jdbc.properties里边就会有jdbc.password=123456 -->
+                <filtering>true</filtering>
+
+                <!-- 指定目录下需要输出的资源文件 -->
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+
+                <!-- 指定目录下不需要输出的资源文件(优先级高于include) -->
+                <excludes>
+                    <exclude>filters/*.properties</exclude>
+                </excludes>
+            </resource>
+        </resources>
     </build>
 </project>

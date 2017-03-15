@@ -11,5 +11,11 @@
 
     <artifactId>study-blog-controller</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.oschina</groupId>
+            <artifactId>study-blog-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

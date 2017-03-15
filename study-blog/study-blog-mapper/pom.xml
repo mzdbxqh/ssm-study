@@ -11,5 +11,48 @@
 
     <artifactId>study-blog-mapper</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.oschina</groupId>
+            <artifactId>study-blog-pojo</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- ##### 数据库相关 ##### -->
+        <!-- Mybatis框架 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+        </dependency>
+        <!-- Mybatis与spring的适配器.Spring没有对mybatis的支持包,mybatis就自己写了个 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+        </dependency>
+        <!-- MySql驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!-- 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <!-- 定义这部分资源文件的源目录(这里特指Mybatis的mapper.xml) -->
+                <directory>${basedir}/src/main/java</directory>
+                <filtering>false</filtering>
+                <!-- 指定目录下需要输出的资源文件 -->
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
 
 </project>
