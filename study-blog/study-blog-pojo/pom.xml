@@ -11,12 +11,4 @@
 
     <artifactId>study-blog-pojo</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-        </dependency>
-
-    </dependencies>
-
 </project>

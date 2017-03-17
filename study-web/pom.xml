@@ -30,10 +30,14 @@
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
+
+        <!-- 其实tomcat7支持最新的3.0版本,不过稳定期间,仍用2.5版本 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
         </dependency>
+
+        <!-- 同上,最新2.2,这里采用稳定的2.0版本 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jsp-api</artifactId>

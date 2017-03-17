@@ -49,6 +49,16 @@
             <artifactId>guava</artifactId>
         </dependency>
 
+        <!-- slf4j的核心包(它只是一套接口) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!-- slf4j对log4j12的支持包,把slf4j的接口转嫁到log4j上去实现 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
