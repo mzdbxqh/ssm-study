@@ -69,7 +69,7 @@
         <jsp-api.version>2.0</jsp-api.version>
 
         <!-- 其他 -->
-        <fastjson.version>1.2.24</fastjson.version>
+        <fastjson.version>1.2.29</fastjson.version>
         <guava.version>21.0</guava.version>
 
     </properties>
@@ -117,12 +117,12 @@
                 <artifactId>spring-aop</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-            <!--Spring对AspectJ框架的支持包,我们用简化版的Spring-AOP就好了-->
-            <!--<dependency>-->
-                <!--<groupId>org.springframework</groupId>-->
-                <!--<artifactId>spring-aspects</artifactId>-->
-                <!--<version>${spring.version}</version>-->
-            <!--</dependency>-->
+            <!-- Spring对AspectJ框架的支持包 -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aspects</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
 
             <!-- ##### Spring web #####-->
             <!-- Spring的mvc框架 -->
@@ -131,16 +131,10 @@
                 <artifactId>spring-webmvc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-            <!--  -->
+            <!-- Spring的web增强实现 -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <!--  -->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc-portlet</artifactId>
                 <version>${spring.version}</version>
             </dependency>
 

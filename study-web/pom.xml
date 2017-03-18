@@ -17,27 +17,20 @@
             <artifactId>study-blog-controller</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-        </dependency>
+
         <!-- JSP相关 -->
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
 
-        <!-- 其实tomcat7支持最新的3.0版本,不过稳定期间,仍用2.5版本 -->
+        <!-- 其实tomcat7支持最新的3.0版本,支持异步servlet.不过稳定起见,仍用2.5版本 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
         </dependency>
 
-        <!-- 同上,最新2.2,这里采用稳定的2.0版本 -->
+        <!-- 同上,最新2.2,这里采用最常用的2.0版本 -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jsp-api</artifactId>
@@ -56,8 +49,6 @@
             <resource>
                 <!-- 定义这部分资源文件的源目录(以下为默认值) -->
                 <directory>${basedir}/src/main/resources</directory>
-                <!-- 定义这部分资源文件输出到哪个目录(以下为默认值) -->
-                <targetPath>META-INF</targetPath>
 
                 <!-- 是否进行过滤,过滤的话,上面引入的filters/*.properties里面定义的键值对,会替换本部分资源文件内的占位符 -->
                 <!-- 例如上面filter.properties里边有一个my.password=123456 -->
@@ -67,8 +58,7 @@
 
                 <!-- 指定目录下需要输出的资源文件 -->
                 <includes>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
+                    <include>**/*</include>
                 </includes>
 
                 <!-- 指定目录下不需要输出的资源文件(优先级高于include) -->

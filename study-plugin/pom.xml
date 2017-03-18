@@ -23,16 +23,6 @@
             <artifactId>junit</artifactId>
         </dependency>
 
-        <!-- json处理器 -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-        </dependency>
-        <!-- 包括了若干google的java项目广泛依赖的核心库 -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
     </dependencies>
 
 </project>
