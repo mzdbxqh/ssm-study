@@ -1,13 +1,11 @@
-#IDEA+Maven搭建SSM项目骨架
-
-## 简介
+## 「IDEA+Maven搭建SSM项目骨架」简介
 这是一个出于教学目的构建的ssm项目骨架，更多详细信息可以浏览[我的博客](https://my.oschina.net/mzdbxqh)
 
 ## 项目结构
 ![项目结构](/doc/structure.png)
 
 
-## 新手图文教程 - 目录
+## 教程目录
 > - [1.1_项目说明_准备工作](https://my.oschina.net/mzdbxqh/blog/837913)
 > - [1.2_项目说明_项目架构](https://my.oschina.net/mzdbxqh/blog/865046)
 > - [1.3_项目说明_文件结构](https://my.oschina.net/mzdbxqh/blog/845979)
