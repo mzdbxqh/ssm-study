@@ -1,3 +1,27 @@
+## 教程目录
+为方便有基础的读者选择性地跳过部分文章，我会尽可能地让各章节内容独立成篇。但由于文章中无法引用整个项目的代码，部分无法脱离上下文环境的文章可能让人不知所云。此时，建议读者按照下述顺序依次阅读。
+> 1. [关于项目称谓、IDEA操作和环境配置的约定](https://my.oschina.net/mzdbxqh/blog/837913)
+> 1. [项目架构之传统三层架构和领域模型三层架构
+](https://my.oschina.net/mzdbxqh/blog/865046)
+> 1. [图文示范IDEA创建Maven项目和子模块](https://my.oschina.net/mzdbxqh/blog/845979)
+> 1. [Maven之Parent模块配置-关于聚合与继承、依赖管理、占位符、构建管理和多套环境](https://my.oschina.net/mzdbxqh/blog/846018)
+> 1. [Maven之依赖配置-关于依赖传递、依赖范围和类加载器](https://my.oschina.net/mzdbxqh/blog/847313)
+> 1. [Maven使用图示-关于生命周期、命令行和IDEA的maven插件](https://my.oschina.net/mzdbxqh/blog/849040)
+> 1. Tomcat_容器说明
+> 1. Tomcat_Web.xml配置
+> 1. Spring_Context配置
+> 1. Spring_MVC配置
+> 1. Mybatis_MAPPER
+> 1. Mybatis_DAO
+> 1. DEMO_Service & DTO
+> 1. DEMO_Controller
+> 1. Shiro_权限结构
+> 1. 富文本编辑器
+> 1. _...
+
+## 项目结构
+![项目结构](/doc/structure.png)
+
 ## 「IDEA+Maven搭建SSM项目骨架」简介
 ### 这是什么
 
@@ -22,25 +46,7 @@
 
 各位读者如发现文章或代码中的错漏，请留言指正。
 
-## 项目结构
-![项目结构](/doc/structure.png)
 
 
-## 教程目录
-> - [1.1_项目说明_准备工作](https://my.oschina.net/mzdbxqh/blog/837913)
-> - [1.2_项目说明_项目架构](https://my.oschina.net/mzdbxqh/blog/865046)
-> - [1.3_项目说明_文件结构](https://my.oschina.net/mzdbxqh/blog/845979)
-> - [2.1_Maven_Parent配置](https://my.oschina.net/mzdbxqh/blog/846018)
-> - [2.2_Maven_依赖配置](https://my.oschina.net/mzdbxqh/blog/847313)
-> - [2.3_Maven_使用图示](https://my.oschina.net/mzdbxqh/blog/849040)
-> - 3.1_Tomcat_容器说明
-> - 3.2_Tomcat_Web.xml配置
-> - 4.1_Spring_Context配置
-> - 4.2_Spring_MVC配置
-> - 5.1_Mybatis_MAPPER
-> - 5.2_Mybatis_DAO
-> - 6.1_DEMO_Service & DTO
-> - 6.2_DEMO_Controller
-> - 7_Shiro_权限结构
-> - 8_富文本编辑器
-> - 9_...
+
+
