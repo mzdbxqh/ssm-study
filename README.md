@@ -1,13 +1,13 @@
 ## 教程目录
 为方便有基础的读者选择性地跳过部分文章，我会尽可能地让各章节内容独立成篇。但由于文章中无法引用整个项目的代码，部分无法脱离上下文环境的文章可能让人不知所云。此时，建议读者按照下述顺序依次阅读。
-> 1. [项目说明_关于项目称谓、IDEA操作和环境配置的约定](https://my.oschina.net/mzdbxqh/blog/837913)
-> 1. [项目说明_项目架构之传统三层架构和领域模型三层架构
+> 1. [「项目说明」关于项目称谓、IDEA操作和环境配置的约定](https://my.oschina.net/mzdbxqh/blog/837913)
+> 1. [「项目说明」项目架构之传统三层架构和领域模型三层架构
 ](https://my.oschina.net/mzdbxqh/blog/865046)
-> 1. [项目说明_图文示范IDEA创建Maven项目和子模块](https://my.oschina.net/mzdbxqh/blog/845979)
-> 1. [Maven_Maven之Parent模块配置-关于聚合与继承、依赖管理、占位符、构建管理和多套环境](https://my.oschina.net/mzdbxqh/blog/846018)
-> 1. [Maven_Maven之依赖配置-关于依赖传递、依赖范围和类加载器](https://my.oschina.net/mzdbxqh/blog/847313)
-> 1. [Maven_Maven使用图示-关于生命周期、命令行和IDEA的maven插件](https://my.oschina.net/mzdbxqh/blog/849040)
-> 1. Tomcat_容器说明
+> 1. [「项目说明」图文示范IDEA创建Maven项目和子模块](https://my.oschina.net/mzdbxqh/blog/845979)
+> 1. [「Maven」Parent模块配置-关于聚合与继承、依赖管理、占位符、构建管理和多套环境](https://my.oschina.net/mzdbxqh/blog/846018)
+> 1. [「Maven」依赖配置-关于依赖传递、依赖范围和类加载器](https://my.oschina.net/mzdbxqh/blog/847313)
+> 1. [「Maven」使用图示-关于生命周期、命令行和IDEA插件](https://my.oschina.net/mzdbxqh/blog/849040)
+> 1. [「Tomcat」图文解析Server.xml配置](https://my.oschina.net/mzdbxqh/blog/868011)
 > 1. Tomcat_Web.xml配置
 > 1. Spring_Context配置
 > 1. Spring_MVC配置
